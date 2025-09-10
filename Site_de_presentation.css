@@ -1,0 +1,733 @@
+body {
+  justify-content: center;
+  align-items: flex-start;
+  border-color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  /* overflow-x: hidden; */
+}
+.logo {
+  border-radius: 50%;
+  width: 10%;
+}
+/* style sur l'entête de la page */
+header {
+  width: 100%;
+  height: 10%;
+  display: flex; /*pour afficher les elts horizontalement*/
+  justify-content: space-between; /* pour un espace egal entre les elements */
+  /* padding: 10px 30px; /*Espacement intérieur autour du contenu */
+  align-items: center; /*permet de centrer les elts*/
+  flex-wrap: wrap; /*pour passer à la ligne*/
+  border-bottom: 5px groove #ccc;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+/* photo de l'entete */
+.ma-photo {
+  width: 10%;
+  height: auto;
+  border-style: inset;
+  border-radius: 10px;
+  border-color: antiquewhite;
+}
+/* style sur le menu */
+.menu {
+  display: flex;
+  /* flex: 1; */
+  position: relative;
+  background-color: #f0f0f0; /* couleur de fond gris clair */
+  max-width: 300vw;
+  border-radius: 120px; /*bords du ruban arrondis*/
+  padding-right: 5%;
+  border: 5px inset #ccc;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 10px 10px 7px;
+}
+.menu nav {
+  width: 100%; /* pour la largeur du logo*/
+  height: auto;
+}
+
+/* style sur les elts ul du menu */
+.menu ul {
+  flex-wrap: wrap; /*pour passer à la ligne*/
+  display: flex; /*pour afficher les elts horizontalement*/
+  justify-content: space-between;
+  align-items: center; /*aligne les elts*/
+  letter-spacing: 3px;
+  gap: 6%; /*Espace horizontal entre chaque lien*/
+  list-style: none; /*enleve les puces de la liste */
+}
+/* style sur les liens  dans le menu*/
+.menu a {
+  text-decoration: none; /*enleve les soulignements des liens*/
+  font-weight: bold;
+  font-size: 1.1em;
+}
+/* changement de couleur au survol des liens dans le menu */
+.menu a:hover {
+  color: #d02090; /*couleur rouge violet*/
+}
+
+/* je me suis arreté ici pour continuer demain merci */
+/* style sur la partie d'acceuil */
+#acceuil,
+#propos-moi,
+#Competence,
+#Projets,
+#Ccontact,
+#formulaires {
+  display: block;
+  max-width: 300vw;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.acceuil {
+  display: flex;
+
+  /* flex-wrap: wrap; pour passer à la ligne */
+  justify-content: space-between;
+  align-items: center;
+}
+/* style sur mes mon intro */
+.infos {
+  flex-wrap: wrap; /*pour passer à la ligne*/
+  flex: 1;
+  margin-left: 15%;
+  word-spacing: 0.5em;
+  line-height: 2em;
+  font-size: 2em;
+}
+
+/* style sur les H2 de la page */
+.page h2 {
+  font-size: 4em;
+  color: #004080;
+  border-left: 4px solid #0077cc;
+  padding-left: 10px;
+  margin-left: 10%;
+  margin-top: 16%;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /*pour passer à la ligne*/
+}
+/* sur la deuxieme photo */
+.ma-photo2 {
+  position: relative;
+  overflow: hidden; /*pour empêcher le débordement*/
+  width: 25%;
+  height: auto;
+  border: 5px double blue;
+  border-radius: 10%;
+  box-shadow: -12px 10px 6px blue;
+}
+
+/* sur les strong se trouvant dans l'acceuil */
+.acceuil strong {
+  color: #4169e1;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 1.5em;
+}
+.acceuil em {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0077cc;
+}
+/* style sur le tableau comportant mon parcours */
+.propos-moi td,
+.propos-moi th {
+  border: 3.5px solid #999;
+  font-size: 1.2em;
+  padding: 1% 1%;
+  /* padding: 5px 12px; /*espace intérieur pour aérer le texte */
+  text-align: center; /*centrage des textes dans les tableaux*/
+}
+.propos-moi table {
+  border-collapse: collapse; /*permet de coller les bords*/
+  margin: 2%;
+}
+/* style sur l'entête du tableau */
+.propos-moi th {
+  background-color: #e8e8e8; /*fond gris clair pour distinguer les entetes*/
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 1.5em;
+}
+
+/* style de fonnd pour les lignes paires (zébrage) */
+.propos-moi tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /*fond très clair pour alterner les lignes*/
+}
+
+/* style sur les elements des premieres colonnes */
+.propos-moi tbody td:first-child {
+  color: rgba(39, 64, 139);
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 3px 5px;
+}
+/* style sur les elements des deuxiemes colonnes */
+.propos-moi tbody td:nth-child(even) {
+  color: rgba(0, 34, 102);
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 3px 5px;
+}
+/* style sur le derniere colonne du tablezu */
+.propos-moi tbody td:last-child {
+  color: #36648b;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 3px 5px;
+}
+.propos-moi a {
+  color: #36648b;
+  text-decoration: none;
+}
+.propos-moi a:hover {
+  color: #d02090;
+}
+
+/* style sur la partie mes qualités */
+.mes-qualite {
+  font-size: 1.5em;
+  margin: 2%;
+  /* line-height: 0.2; */
+}
+.mes-qualite strong {
+  color: #004080;
+}
+/* style sur la partie denummeration de mes compétences */
+.mes-competences,
+.realisation {
+  background-color: #f0f4ff;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  padding: 15px 15px 15px 45px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 10px 1px 5px rgba(0, 0, 0, 0.5);
+  border-left: 4px solid #3399ff;
+  position: relative;
+}
+/* sur les listes ol  */
+.mes-competences li,
+.realisation li {
+  padding-left: 20px;
+  list-style-type: lower-alpha;
+  margin-top: 5px;
+}
+
+/* sur ul */
+.mes-competences ul,
+.realisation ul {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: brown;
+}
+/* label se trouvant dans ul */
+.mes-competences strong,
+.realisation strong {
+  color: #1e90ff;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.6em;
+}
+
+/* span se trouvant entre summary */
+.mes-competences span,
+.realisation span {
+  font-weight: bold;
+  color: #0055aa;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.mes-competences em,
+.realisation p {
+  color: black;
+  padding: 0;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size: 1.3em;
+}
+.realisation p {
+  justify-content: space-between;
+  margin-left: 2%;
+  word-spacing: 0.5em;
+}
+
+/* commencer ici */
+
+.Esetec {
+  display: flex; /*affiche les elts en ligne*/
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  gap: 30px; /*pour l'espacement entre les elts*/
+  padding: 20px;
+  margin-top: 90px;
+}
+.site-esetec {
+  /* display: flex; affichage en ligne */
+  border-left: 9px solid #0077cc;
+  border-right-color: transparent;
+  border-radius: 50px;
+  max-width: 25%;
+  background: #f4f4f4;
+  padding: clamp(10px, 2vw, 30px);
+  box-sizing: border-box;
+  line-height: 2em;
+}
+.projet li ul li ::before {
+  content: none !important;
+}
+.projet li ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.photos-esetec {
+  position: relative;
+  overflow: hidden; /*pour empêcher le débordement*/
+  flex: 1; /*prend tout l'espace dispo */
+  width: 800px;
+  max-width: 75%; /*la taille max que peut occupée cette partie*/
+  aspect-ratio: 16 / 9;
+  margin: auto;
+}
+
+.photos-esetec .esetec {
+  position: absolute;
+  inset: 0;
+  /* right: 0; */
+  /* width: 100%; */
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  /* animation: fade 24s infinite; 
+  animation-fill-mode: both;*/
+}
+.photos-esetec .esetec img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+/* CREATION D'ANNIMATION POUR LES PHOTOS */
+/* pour l'image d'acceuil-esetec : animation simple*/
+.esetec.acceuil-esetec {
+  width: 500px;
+  animation: esetecAcceuil 12s infinite;
+}
+@keyframes esetecAcceuil {
+  0%,
+  8% {
+    opacity: 0;
+  }
+
+  8%,
+  20% {
+    opacity: 1;
+    z-index: 10;
+  }
+  25%,
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+/* pour l'image  de prepas : slide depuis la gauche*/
+.esetec.prepas {
+  animation: prepas 12s infinite;
+  animation-delay: 2s;
+}
+@keyframes prepas {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  8%,
+  20% {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 10;
+  }
+  25%,
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+    z-index: 0;
+  }
+}
+
+/* pour l'image  de bts : zoom*/
+.esetec.bts {
+  animation: bts 12s infinite;
+  animation-delay: 4s;
+}
+@keyframes bts {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  8%,
+  20% {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10;
+  }
+
+  25%,
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+    z-index: 0;
+  }
+}
+
+/* pour l'image  de cycle-ingenieur : ROTATION*/
+.esetec.cycle-ingenieur {
+  animation: cycle-ingenieur 12s infinite;
+  animation-delay: 6s;
+}
+@keyframes cycle-ingenieur {
+  0% {
+    opacity: 0;
+    transform: rotate(-180deg);
+  }
+
+  8%,
+  20% {
+    opacity: 1;
+    transform: rotate(0deg);
+    z-index: 10;
+  }
+
+  25%,
+  100% {
+    opacity: 0;
+    transform: rotate(180deg);
+    z-index: 0;
+  }
+}
+
+/* pour l'image  de master : slide du bas*/
+.esetec.master {
+  animation: master 12s infinite;
+  animation-delay: 8s;
+}
+@keyframes master {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  8%,
+  20% {
+    opacity: 1;
+    transform: translateY(0%);
+    z-index: 10;
+  }
+
+  25%,
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+    z-index: 0;
+  }
+}
+
+/* pour l'image  de doctorat : effet mixte(zoom+rotation*/
+.esetec.doctorat {
+  animation: doctorat 12s infinite;
+  animation-delay: 10s;
+}
+@keyframes doctorat {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-90deg);
+  }
+
+  8%,
+  20% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    z-index: 10;
+  }
+
+  25%,
+  100% {
+    opacity: 0;
+    transform: scale(1.2) rotate(90deg);
+    z-index: 0;
+  }
+}
+/* animation des deux images  
+.photos-esetec .esetec.acceuil-esetec {
+  animation-delay: 0s;
+}
+.photos-esetec .esetec.prepas {
+  animation-delay: 4s;
+}
+.photos-esetec .esetec.bts {
+  animation-delay: 8s;
+}
+.photos-esetec .esetec.cycle-ingenieur {
+  animation-delay: 12s;
+}
+.photos-esetec .esetec.master {
+  animation-delay: 16s;
+}
+.photos-esetec .esetec.doctorat {
+  animation-delay: 20s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  16.666% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}*/
+
+/* arreter ici */
+
+.Competence,
+.projet {
+  counter-reset: section;
+  padding-left: 0;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  margin-right: 10%;
+  margin-left: 5%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.Competence > li,
+.projet > li {
+  list-style: none;
+  counter-increment: section;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.Competence > li ::before,
+.projet > li ::before {
+  content: counter(section) ".";
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0055aa;
+}
+
+/* style sur le menu deroulant pour les filieres */
+summary {
+  cursor: pointer;
+}
+details summary {
+  list-style: none; /*enlêve la flêche par defaut*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #eee;
+  border: 4px inset #ccc;
+  margin-bottom: 2%;
+}
+/* creation de la flêche */
+details summary::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #004080;
+  border-bottom: 2px solid #004080;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+details[open] summary::after {
+  transform: rotate(-135deg);
+}
+
+/* formulaire */
+.formulaire {
+  border: 12px groove;
+  width: 90%;
+  margin: 5%;
+}
+/* pour le formulaire */
+.formulaire td {
+  border: 3.5px solid #999;
+  font-size: 1.2em;
+  padding: 1% 1%;
+  /* padding: 5px 12px; /*espace intérieur pour aérer le texte */
+  /* text-align: center; centrage des textes dans les tableaux */
+  border-radius: 12px;
+}
+.formulaire label {
+  padding-left: 10px;
+}
+#Sexe input {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  display: inline;
+}
+
+#Sexe {
+  text-align: center;
+  word-spacing: 90px;
+}
+
+.formulaire input {
+  width: 90%; /*pour la largeur */
+  height: 2vw;
+  color: #004080;
+  text-align: center;
+  border: 8px inset;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.formulaire textarea {
+  border: 8px inset;
+  width: 90%; /*pour la largeur */
+  height: 4vw;
+  /* padding-left: 10%; */
+  /* padding-right: 50%; */
+  text-align: justify;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.formulaire table {
+  /* border-collapse: collapse; permet de coller les bords */
+  margin-bottom: 4%;
+  margin-left: 2%;
+  width: 90%;
+  border: 5px groove #999;
+  box-shadow: 12px 15px 7px;
+}
+.formulaire h2 {
+  margin-top: 5%;
+}
+/* style sur l'entête du tableau */
+.formulaire th {
+  background-color: #e8e8e8; /*fond gris clair pour distinguer les entetes*/
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 1.5em;
+}
+
+/* style de fonnd pour les lignes paires (zébrage) */
+.formulaire tbody tr:nth-child(even) {
+  background-color: #dddddd; /*fond très clair pour alterner les lignes*/
+}
+
+/* style sur les elements des premieres colonnes du formulaire */
+.formulaire tbody td:first-child {
+  color: rgba(39, 64, 139);
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 3px 5px;
+}
+
+/* style sur le derniere colonne du tablezu */
+.formulaire tbody td:last-child {
+  font-weight: bold;
+  text-shadow: 2px 3px 5px;
+}
+
+/* style sur les boutons */
+.formulaire button {
+  cursor: pointer;
+  padding: 1%;
+  border-radius: 20px;
+  border: 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+/* bouton envoyer */
+.bouton-envoyer {
+  background-color: #7fffd4;
+}
+/* bouton reinitialiser */
+.bouton-reinitialiser {
+  float: right; /*met le bouton a droite*/
+  color: black;
+  background-color: red;
+}
+/* style sur le bas de page (footer) */
+footer {
+  padding: 1%;
+  background-color: #9ac0cd;
+  border-left: 6px double #7fffd4;
+  border-bottom: 10px inset #7fffd4;
+  border-radius: 12px;
+  box-shadow: 15px 20px 8px;
+}
+
+.contact label,
+.reseau label {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  margin-left: 5%;
+}
+#Contact a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #004080;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-left: 12px;
+}
+#Contact a:hover {
+  color: #ff00ff;
+}
+.reseau {
+  overflow-wrap: break-word;
+}
+.echange {
+  margin: 2%;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-style: oblique;
+  word-spacing: 2em;
+}
+.pied {
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-left: 5%;
+  letter-spacing: 0.2em;
+  word-spacing: 0.5em;
+}
